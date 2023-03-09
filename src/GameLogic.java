@@ -184,7 +184,7 @@ public class GameLogic {
                 System.out.print("Do ywe have a pre-need funeral policy on file in the event that your loved ones are left behind (y/n)? ");
                 String funeralConfirm = scan.next();
 
-                if (funeralConfirm.equals("y") || funeralConfirm.equals("yes") || funeralConfirm.equals("Y") || funeralConfirm.equals("Yes")) {
+                if (funeralConfirm.equalsIgnoreCase("y") || funeralConfirm.equalsIgnoreCase("yes")) {
                     System.out.println("\nGreat! We will be contacting your family shortly. ");
                 } else {
                     System.out.println("\nOur sponsor, Hamilton Funeral Home will be contacting your family shortly to talk about at-need arrangements. ");
